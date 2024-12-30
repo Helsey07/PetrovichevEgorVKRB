@@ -1,0 +1,82 @@
+@startuml
+
+' Фон, шрифт и размер
+skinparam backgroundColor #f0f0f0
+skinparam fontName "Roboto"
+skinparam fontSize 10
+skinparam packageFontSize 9
+skinparam packageFontStyle bold
+skinparam packageBorderColor #8A2BE2
+skinparam packageBackgroundColor #E6E6FA
+skinparam packageStyle rectangular
+skinparam packagePadding 20
+
+' Элементы диаграммы
+skinparam classFontSize 10
+skinparam classAttributeFontSize 9
+skinparam classBackgroundColor #FFFFFF
+skinparam classBorderColor #DDA0DD
+skinparam classFontColor #333333
+skinparam arrowColor #8A2BE2
+
+' Элементы взаимодействий и стрелок
+skinparam sequenceArrowThickness 2
+skinparam sequenceArrowColor #8A2BE2
+skinparam sequenceLifeLineColor #DA70D6
+
+' Элементов перехода (стрелок)
+skinparam arrowFontSize 10
+skinparam arrowFontColor #8A2BE2
+
+' Описания в тексте пакетов
+skinparam noteBackgroundColor #F0E6FA
+skinparam noteBorderColor #D3D3D3
+skinparam noteFontSize 9
+skinparam noteFontColor #333333
+
+start
+
+package 1. Проанализировать текущее \n состояние индустрии дизайна {
+    :1.1. Изучить существующие нейросетевые инструменты;
+    :1.2. Определить их основные преимущества и недостатки;
+}
+
+package 2. Разработка концепции сервиса {
+    :2.1. Определение требований к функционалу сервиса;
+    :2.2. Разработка архитектуры (взаимодействие нейросетей и UI);
+}
+
+package 3. Выбор нейросетевых моделей {
+    :3.1. Составить список требований к моделям;
+    :3.2. Подобрать генеративные модели для создания контента;
+}
+
+package 4. Настройка нейросетевых моделей {
+    :4.1. Разработать/адаптировать модель для оценки изображений;
+}
+
+:5. Реализация модуля генерации изображений;
+:6. Обеспечение взаимодействия между модулями;
+
+package 7. Создание интуитивно понятного интерфейса { 
+    :7.1. Дизайн интерфейса;
+    :7.2. Верстка интерфейса для пользователей без технической подготовки;
+}
+
+package 8. Провести тестирование {
+    :8.1. Внутреннее тестирование;
+    :8.2. Оценка производительности и точности;
+    :8.3. Тестирование с участием дизайнеров;
+}
+
+package 9. Провести оценку \n экономической \n эффективности {
+    :9.1. Расчет экономии времени и ресурсов;
+}
+
+package 10. Обоснование \n социальной и \n экономической значимости {
+    :10.1. Рассмотреть влияние на рынок труда;
+    :10.2. Выделить выгоды для дизайн-студий;
+}
+
+stop
+@enduml

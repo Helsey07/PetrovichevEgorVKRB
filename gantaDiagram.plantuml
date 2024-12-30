@@ -1,0 +1,56 @@
+@startgantt
+
+skinparam backgroundColor #f0f0f0
+skinparam fontName "Roboto"
+skinparam fontSize 10
+skinparam packageFontSize 9
+skinparam packageFontStyle bold
+skinparam packageBorderColor #8A2BE2
+skinparam packageBackgroundColor #E6E6FA
+skinparam packageStyle rectangular
+skinparam packagePadding 20
+
+skinparam classFontSize 10
+skinparam classAttributeFontSize 9
+skinparam classBackgroundColor #FFFFFF
+skinparam classBorderColor #DDA0DD
+skinparam classFontColor #333333
+skinparam arrowColor #8A2BE2
+
+skinparam sequenceArrowThickness 2
+skinparam sequenceArrowColor #8A2BE2
+skinparam sequenceLifeLineColor #DA70D6
+
+skinparam arrowFontSize 10
+skinparam arrowFontColor #8A2BE2
+
+
+skinparam noteBackgroundColor #F0E6FA
+skinparam noteBorderColor #D3D3D3
+skinparam noteFontSize 9
+skinparam noteFontColor #333333
+
+project starts 2024-12-30
+
+[Соорудить архитектуру решения] starts 2024-12-30 and lasts 1 day
+[Подобрать генеративные модели для создания контента] starts 2024-12-31 and lasts 4 days
+[Адаптировать модель для оценки изображений] starts 2025-01-04 and lasts 57 days
+[Модуль генерации изображений] starts 2025-03-01 and lasts 48 days
+[Обеспечить взаимодействие между модулями] starts 2025-04-01 and lasts 10 days
+
+[Дизайн] starts 2025-04-07 and lasts 1 day
+[Фронт] starts 2025-04-14 and lasts 7 days
+[Бэкэнд] starts 2025-04-21 and lasts 7 days
+
+[Тестирование] starts 2025-05-01 and lasts 1 day
+
+[Подобрать генеративные модели для создания контента] starts after [Соорудить архитектуру решения]'s end
+[Адаптировать модель для оценки изображений] starts after [Подобрать генеративные модели для создания контента]'s end
+[Модуль генерации изображений] starts after [Адаптировать модель для оценки изображений]'s end
+[Обеспечить взаимодействие между модулями] starts after [Модуль генерации изображений]'s end
+[Дизайн] starts after [Обеспечить взаимодействие между модулями]'s end
+[Фронт] starts after [Дизайн]'s end
+[Бэкэнд] starts after [Фронт]'s end
+[Тестирование] starts after [Бэкэнд]'s end
+
+@endgantt
